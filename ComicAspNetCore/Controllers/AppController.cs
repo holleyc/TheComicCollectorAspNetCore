@@ -25,6 +25,21 @@ namespace ComicAspNetCore.Controllers
             return View();
         }
 
+        //This is the add comic view
+        [HttpGet("addcomic")]
+        public IActionResult AddComic()
+        {
+            ViewBag.Title = "Add New Comic";
+
+            return View();
+        }
+
+        [HttpPost("addcomic")]
+        public IActionResult AddComic(object model)
+        {
+            return View();
+        }
+
         //This is the about view
         [HttpGet("about")]
         public IActionResult About()
