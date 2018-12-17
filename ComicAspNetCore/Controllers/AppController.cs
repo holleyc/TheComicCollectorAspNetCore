@@ -11,6 +11,7 @@ namespace ComicAspNetCore.Controllers
         }
 
         //This is the contacts view
+        [HttpGet("contact")]
         public IActionResult Contact()
         {
             ViewBag.Title = "Contact Us";
@@ -18,6 +19,7 @@ namespace ComicAspNetCore.Controllers
         }
 
         //This is the about view
+        [HttpGet("about")]
         public IActionResult About()
         {
             ViewBag.Title = "About Us";
@@ -25,6 +27,7 @@ namespace ComicAspNetCore.Controllers
         }
 
         //This is the list all comics view
+        [HttpGet("listallcomics")]
         public IActionResult ListAllComics()
         {
             ViewBag.Title = "List All Comics";
@@ -32,6 +35,7 @@ namespace ComicAspNetCore.Controllers
         }
 
         //This is the edit comic view
+        [HttpGet("editcomic")]
         public IActionResult EditComic()
         {
             ViewBag.Title = "Edit Comic";
