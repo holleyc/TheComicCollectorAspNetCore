@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 
 namespace ComicAspNetCore.Controllers
 {
@@ -17,8 +16,12 @@ namespace ComicAspNetCore.Controllers
         {
             ViewBag.Title = "Contact Us";
 
-            throw new InvalidOperationException("Bad things happen");
+            return View();
+        }
 
+        [HttpPost("contact")]
+        public IActionResult Contact(object model)
+        {
             return View();
         }
 
