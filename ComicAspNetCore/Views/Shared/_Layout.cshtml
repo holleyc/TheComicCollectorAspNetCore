@@ -5,7 +5,18 @@
     <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
-    <header>Welcome to the Comic Collector</header>
+    <header>
+        <h1>Welcome to the Comic Collector</h1>
+        <menu>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/app/contact">Contact</a></li>
+                <li><a href="/app/about">About</a></li>
+                <li><a href="/app/editcomic">Edit Comic</a></li>
+                <li><a href="/app/listallcomics">List All Comics</a></li>
+            </ul>
+        </menu>
+    </header>
     <section>
         <h2>@ViewBag.Title</h2>
         @RenderBody()
