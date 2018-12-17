@@ -21,6 +21,10 @@ namespace ComicAspNetCore
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/error");
+            }
 
             app.UseStaticFiles();
             app.UseNodeModules(env);
