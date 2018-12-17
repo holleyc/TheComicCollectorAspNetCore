@@ -18,6 +18,7 @@ namespace ComicAspNetCore
         {
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseNodeModules(env);
         }
     }
 }
