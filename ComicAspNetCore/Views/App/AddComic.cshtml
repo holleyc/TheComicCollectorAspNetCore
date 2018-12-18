@@ -2,18 +2,26 @@
 @{
     ViewBag.Title = "Add New Comic";
 }
+@section Scripts{
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}
 <form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
     <label asp-for="Name">Comic Name:</label>
     <br />
     <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
     <br />
     <label asp-for="Publisher">Publisher:</label>
     <br />
     <input asp-for="Publisher" />
+    <span asp-validation-for="Publisher"></span>
     <br />
     <label asp-for="Issue">Issue:</label>
     <br />
     <input asp-for="Issue" />
+    <span asp-validation-for="Issue"></span>
     <br />
     <input type="submit" value="Send Message" />
 </form>
