@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ComicAspNetCore.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ComicAspNetCore.Controllers
 {
@@ -20,7 +21,7 @@ namespace ComicAspNetCore.Controllers
         }
 
         [HttpPost("contact")]
-        public IActionResult Contact(object model)
+        public IActionResult Contact(ContactViewModel model)
         {
             return View();
         }
@@ -35,7 +36,7 @@ namespace ComicAspNetCore.Controllers
         }
 
         [HttpPost("addcomic")]
-        public IActionResult AddComic(object model)
+        public IActionResult AddComic(ComicViewModel model)
         {
             return View();
         }

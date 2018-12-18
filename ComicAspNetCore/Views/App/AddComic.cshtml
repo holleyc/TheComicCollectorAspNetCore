@@ -1,18 +1,19 @@
-﻿@{
+﻿@model ComicViewModel
+@{
     ViewBag.Title = "Add New Comic";
 }
 <form method="post">
-    <label>Comic Name:</label>
+    <label asp-for="Name">Comic Name:</label>
     <br />
-    <input name="name" />
+    <input asp-for="Name" />
     <br />
-    <label>Publisher:</label>
+    <label asp-for="Publisher">Publisher:</label>
     <br />
-    <input name="publisher" />
+    <input asp-for="Publisher" />
     <br />
-    <label>Issue:</label>
+    <label asp-for="Issue">Issue:</label>
     <br />
-    <input name="issue" />
+    <input asp-for="Issue" />
     <br />
     <input type="submit" value="Send Message" />
 </form>
